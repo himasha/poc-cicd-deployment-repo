@@ -1,0 +1,12 @@
+environments:
+   - name: dev
+     configs:
+       endpoints:
+           production:
+               url: 'http://localhost:9091/booking'
+           sandbox: 
+                url : 'http://sandbox.com:9091/booking'
+       deploymentEnvironments:
+           - displayOnDevportal: true
+             deploymentEnvironment: Default
+             deploymentVhost : localhost
